@@ -2,6 +2,7 @@
 private class TestSampleDataController {
     @isTest
     static void importSampleData() {
+        system.debug('Hiii');
         Test.startTest();
         SampleDataController.importSampleData();
         Test.stopTest();
