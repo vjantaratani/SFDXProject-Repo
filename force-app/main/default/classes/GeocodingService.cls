@@ -5,6 +5,7 @@ public with sharing class GeocodingService {
     public static List<Coordinates> geocodeAddresses(
         List<GeocodingAddress> addresses
     ) {
+        system.debug('hello');
         List<Coordinates> computedCoordinates = new List<Coordinates>();
 
         for (GeocodingAddress address : addresses) {
